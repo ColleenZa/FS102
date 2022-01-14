@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NUS Giving Run BIG 2021</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body id="page1">
+
+    <button type="button" class="scroll-top" onclick="goToTop();">TOP</button>
+    <!-- site-navbar start -->
+    <div class="navbar-area">
+        <div class="container">
+            <nav class="site-navbar" id="navbar">
+                <!-- site logo -->
+                <a href="index.html">
+                    <img src="images/org_logo.png" alt="logo" width="50" height="44" />
+                </a>
+                <!-- site menu/nav -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="RaceInfo.html">Race Information</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li class="login-button "><a href="MyAcct.html">My Account</a></li>
+                    <li class="join-button"><a href="Register.html">Register</a></li>
+                </ul>
+
+                <!-- nav-toggler for mobile version only -->
+                <button class="nav-toggler">
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </div>
+    <div>
+        <img src="images/KV.jpg" alt="KV" class="KV">
+    </div>
+    <div class="countdown" id="timer">
+        <div id="days"></div>
+        <div id="hours"></div>
+        <div id="minutes"></div>
+        <div id="seconds"></div>
+    </div>
+    <!-- About Us -->
+    <div class="About">
+        <h1>ABOUT US</h1>
+        <hr class='hmpg'>
+        <p class="Home">As a global leader in university philanthropy, NUS Giving is delivering sustainable impact and
+            realising
+            possibilities.
+        </p>
+        <p class="Home"> We build enduring relationships with our donors to seed and grow transformational opportunities
+            that
+            create
+            a ripple effect of progress through our communities and the world, transforming lives and empowering
+            change.<br>
+            We are future-making as we empower students to achieve their fullest potential, give future leaders
+            and
+            changemakers the opportunity to learn from the best through world-class academic and research
+            programmes,
+            and enable the foremost minds of today to solve the problems of tomorrow through innovative
+            research.
+        </p>
+        <hr>
+    </div>
+
+    <div class="container-fluid feature-section">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img class="featureimg img-fluid" src="images/runfuture.jpg" alt="runimg">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h2>NUS RUN BIG</h2>
+                <hr class="hmpg">
+                <p class="Home">NUS GIVING RUN BIG is held annually to celebrate and recognise everyday heroes who
+                    have made a positive impact in the lives of others.<br><br>Come Run BIG with us by taking your pick
+                    from the various challenges and start clocking in those clicks. We have also included the best
+                    running trails in the mix!
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h2>GALLERY</h2>
+    </div>
+    <div class="container mx-auto gallerybox">
+        <div class="row">
+            <div class="col">
+                <div class="image-container">
+                    <img src="images/G1.jpg" id="content1" class="active imgg" alt="G1">
+                    <img src="images/G2.jpg" id="content2" class="imgg" alt="G2">
+                    <img src="images/G3.jpg" id="content3" class="imgg" alt="G3">
+                    <img src="images/G4.jpg" id="content4" class="imgg" alt="G4">
+                    <img src="images/G5.jpg" id="content5" class="imgg" alt="G5">
+                </div>
+                <div class="dot-container">
+                    <button onclick="dot(1)"></button>
+                    <button onclick="dot(2)"></button>
+                    <button onclick="dot(3)"></button>
+                    <button onclick="dot(4)"></button>
+                    <button onclick="dot(5)"></button>
+                </div>
+                <button id="prev" onclick="prev()"> &lt; </button>
+                <button id="next" onclick="next()"> &gt; </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <hr>
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram social-icons"></i></a>
+                <a href="mailto:contactus@nusrunbig.com" target="_blank"><i
+                        class="fas fa-envelope social-icons"></i></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter social-icons"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook social-icons"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+                <li class="list-inline-item"><button id="myBtn">Privacy Policy</button></li>
+            </ul>
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>PERSONAL DATA</h3>
+                    1. By registering online and participating in the Virtual Event, the Participant
+                    acknowledges the privacy statements below and consents to the collection, use, disclosures
+                    and/or processing of the Participant’s personal information as set out below.
+                    <br>
+                    2. (i) NUS and/or third-party contractors on behalf of NUS will collect, use, disclose
+                    and/or process the Participant’s personal data or personal information (including
+                    information provided in the registration form) provided by the Participant, or from other
+                    sources. Such personal data will be collected, used, disclosed and/or processed by NUS
+                    and/or its third party contractors for the purposes of processing and managing the
+                    Participant’s registration in the Virtual Event, generally for the administration, promotion
+                    and marketing of the Virtual Event.
+                    (ii) NUS may disclose the Participant’s personal information to any third parties involved
+                    in the Virtual Event, and to its suppliers and service providers, and agents, sited in or
+                    outside of Singapore, for one or more of the above Purposes.
+                    (iii) NUS may contact the Participant from time to time by postal mail, electronic
+                    transmission to the Participant’s email address, and/or by phone call, text messages (SMS
+                    and mms) and/or by fax.
+                    <br>
+                    3. The Participant consents to the Organiser’s use and publication for the Purposes,
+                    without compensation or other payment to the Participant, of any photographs, motion
+                    pictures, recordings, or any other records of the Virtual Event that may contain the
+                    Participant’s image, voice, or statement, and to the use and publication of the
+                    Participant’s name, race result, age in any form of media (including but not limited to the
+                    Official Website, NUS website, newspapers, and news media websites).
+                    <br>
+                    4. If the Participant provides any information that is untrue, inaccurate, not current or
+                    incomplete, or if the Organiser has grounds to suspect that such information is untrue,
+                    inaccurate, not current or incomplete, the Organiser may suspend or terminate the
+                    Participant's registration, participation in the Virtual Event, and/or refuse any and all
+                    future use of the Official Website (or any parts thereof).
+                    <br>
+                    5. If you have any enquiries regarding the terms and conditions, please contact us at
+                    info@nusrunbig.com.
+                </div>
+            </div>
+            <p class="copyright">NUS Giving Run Big © 2009</p>
+        </footer>
+        <br>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e3904b02e6.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
